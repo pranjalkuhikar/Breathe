@@ -1,0 +1,6 @@
+facility_name,start_date,end_date,consumption,unit
+Frankfurt Manufacturing Hub,2026-04-01,2026-05-01,1800,kWh
+Houston Assembly Plant,2026-04-12,2026-05-14,4.5,MWh
+Bangalore Logistics Center,2026-03-01,2026-05-15,3200,kWh
+Unknown Office Tokyo,2026-04-01,2026-05-01,1200,kWh
+Frankfurt Manufacturing Hub,2026-04-01,2026-05-01,22000,kWh

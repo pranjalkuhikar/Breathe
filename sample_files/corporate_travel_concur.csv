@@ -1,0 +1,7 @@
+Category,Quantity,Unit,Origin,Destination,Date,Class,Details
+Flight,1,trip,JFK,LAX,2026-05-10,Economy,NYC to LA Sales Meeting
+Flight,1,trip,LHR,CDG,2026-05-12,Business,London to Paris Business trip
+Hotel,4,nights,,,2026-05-13,Standard,Frankfurt hotel stay
+Car Rental,120,mi,,,2026-05-14,,Client site visit ground travel
+Flight,1,trip,DEL,SIN,2026-05-15,Economy,APAC Summit flight
+Flight,1,trip,HND,DXB,2026-05-16,Business,Middle East Hub flight

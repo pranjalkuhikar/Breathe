@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Modern HSL Dark Palette */
+  --bg-main: 224 71% 4%;
+  --bg-surface: 224 71% 7%;
+  --bg-surface-elevated: 224 71% 12%;
+  --border-subtle: 217 19% 20%;
+  --text-primary: 210 40% 98%;
+  --text-secondary: 215 20.2% 65.1%;
+  --text-muted: 217.2 32.6% 17.5%;
+
+  /* Harmonies Statuses */
+  --color-primary: 142 71% 45%; /* Breathe Green */
+  --color-primary-hover: 142 72% 38%;
+  
+  --status-pending: 217.2 91.2% 59.8%; /* Blue */
+  --status-approved: 142.1 76.2% 36.3%; /* Emerald */
+  --status-flagged: 37.9 92.1% 50.2%; /* Amber */
+  --status-rejected: 346.8 84.1% 50.2%; /* Red */
+  
+  --shadow-premium: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --glass-bg: rgba(10, 15, 30, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(var(--bg-main));
+  color: hsl(var(--text-primary));
+  font-family: var(--font-body);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--bg-main));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border-subtle));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--text-secondary) / 0.5);
+}

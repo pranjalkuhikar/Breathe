@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Soft Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    
+    <!-- Emerald-Teal Leaf Gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    
+    <!-- Tech Blue/Teal Bar Gradients -->
+    <linearGradient id="barGrad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+    <linearGradient id="barGrad3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Clean dark circular background frame -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+
+  <!-- Dynamic rising bars (represented by rounded rectangles) -->
+  <g transform="translate(48, 48)">
+    <!-- Bar 1 (Shortest - Tech Blue) -->
+    <rect x="64" y="240" width="60" height="160" rx="20" fill="url(#barGrad1)" />
+    
+    <!-- Bar 2 (Medium - Turquoise/Teal) -->
+    <rect x="178" y="160" width="60" height="240" rx="20" fill="url(#barGrad2)" />
+    
+    <!-- Bar 3 (Tallest - Emerald Green) -->
+    <rect x="292" y="80" width="60" height="320" rx="20" fill="url(#barGrad3)" opacity="0.85" />
+    
+    <!-- Leaf emblem overlaying the tallest bar to represent Breathing ESG data -->
+    <path d="M292,80 
+             C292,0 380,0 400,60 
+             C400,140 312,140 292,80 Z" 
+          fill="url(#leafGrad)" 
+          filter="drop-shadow(0px 8px 16px rgba(16, 185, 129, 0.45))" />
+          
+    <!-- Decorative Center Leaf Vein -->
+    <path d="M292,80 C320,60 360,55 400,60" 
+          stroke="#ffffff" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          fill="none" 
+          opacity="0.6" />
+  </g>
+</svg>
